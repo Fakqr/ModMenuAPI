@@ -1,3 +1,5 @@
+var ModMenuTabs = [];
+
 function createModMenu(NAME, DESCRIPTION, AUTHOR) {
     // Variables
     var ModMenuName = NAME;
@@ -99,6 +101,10 @@ function createTab(MODMENU, NAME) {
         } else {
             Tab.innerText = 'Tab';
         };
+
+        ModMenuTabs.push({
+            NAME : Tab
+        });
 
         return Tab;
     } else {
