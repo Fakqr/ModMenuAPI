@@ -60,6 +60,10 @@ function createModMenu(NAME, DESCRIPTION, AUTHOR) {
         color: white;
         margin: 5px;
     }
+
+    .ModMenuMain .tab {
+
+    }
     `;
 
     // Functions
@@ -86,7 +90,42 @@ function createModMenu(NAME, DESCRIPTION, AUTHOR) {
 };
 
 function createTab(MODMENU, NAME) {
+    if (MODMENU) {
+        var Tab = document.createElement('table');
+        Tab.classList.add('tab');
+
+        if (NAME) {
+            Tab.innerText = NAME;
+        } else {
+            Tab.innerText = 'Tab';
+        };
+
+        return ModMenuTab;
+    } else {
+        console.warn('Couldn\'t find MODMENU!')
+    };
 };
 
-function createItem(TAB, NAME, FUNCTION) {
+function createButton(TAB, NAME, FUNCTION) {
+    if (TAB) {
+        var Button = document.createElement(Button);
+
+        if (NAME) {
+            Button.innerText = NAME
+        } else {
+            Button.innerText = 'Button'
+        };
+
+        if (FUNCTION && typeof(FUNCTION) == 'function') {
+            Button.onclick = FUNCTION;
+        } else {
+            Button.onclick = function() {
+                console.log('Button Clicked!');
+            };
+        };
+
+        return Button;
+    } else {
+        console.warn('Couldn\t find TAB!');
+    };
 };
