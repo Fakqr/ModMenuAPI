@@ -1,7 +1,6 @@
 (function () {
     var script = document.createElement('script');
     script.src = 'https://raw.githubusercontent.com/Fakqr/ModMenuAPI/refs/heads/main/ModMenuAPI.js';
-    document.head.appendChild(script);
 
     script.onload = function () {
         var ModMenu = createModMenu('Example', 'This is a Mod Menu!', 'You');
@@ -10,4 +9,6 @@
             console.log('The button was clicked!')
         });
     };
+    
+    document.head.appendChild(script);
 })();
