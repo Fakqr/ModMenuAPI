@@ -30,6 +30,7 @@ function createModMenu(NAME, DESCRIPTION, AUTHOR) {
 
     var DestroyMenuButton = document.createElement('button');
     DestroyMenuButton.innerText = 'X';
+    destroyModMenu.classList.add('DestroyMenuButton');
 
     // Style
     var CSS = `
@@ -47,7 +48,7 @@ function createModMenu(NAME, DESCRIPTION, AUTHOR) {
         margin-left: -250px;
     }
 
-    .ModMenuMain .DestroyModMenu {
+    .ModMenuMain .DestroyMenuButton {
         position: fixed;
         top: 0;
         right: 0;
@@ -62,7 +63,6 @@ function createModMenu(NAME, DESCRIPTION, AUTHOR) {
     }
 
     .ModMenuMain .tab {
-
     }
     `;
 
@@ -91,7 +91,7 @@ function createModMenu(NAME, DESCRIPTION, AUTHOR) {
 
 function createTab(MODMENU, NAME) {
     if (MODMENU) {
-        var Tab = document.createElement('table');
+        var Tab = document.createElement('div');
         Tab.classList.add('tab');
 
         if (NAME) {
@@ -100,7 +100,7 @@ function createTab(MODMENU, NAME) {
             Tab.innerText = 'Tab';
         };
 
-        return ModMenuTab;
+        return Tab;
     } else {
         console.warn('Couldn\'t find MODMENU!')
     };
