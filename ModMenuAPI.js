@@ -29,7 +29,7 @@ function createModMenu(NAME, DESCRIPTION, AUTHOR) {
     AuthorElement.innerHTML = `Author : ${ModMenuAuthor}`;
 
     var DestroyMenuButton = document.createElement('button');
-    DestroyModMenu.innerText = 'X';
+    DestroyMenuButton.innerText = 'X';
 
     // Style
     var CSS = `
