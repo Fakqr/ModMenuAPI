@@ -1,7 +1,7 @@
 (function () {
     // Loads ModMenu API
     var x = document.createElement('script');
-    x.src = 'https://cdn.jsdelivr.net/gh/Fakqr/ModMenuAPI@latest/ModMenuAPI.min.js';
+    x.src = 'https://cdn.jsdelivr.net/gh/Fakqr/ModMenuAPI@latest/ModMenuAPI.js';
 
     // Waits until ModMenu API if fully loaded before continuing
     x.onload = function() {
