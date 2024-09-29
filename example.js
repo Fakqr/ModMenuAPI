@@ -1,6 +1,6 @@
 (function () {
     var x = document.createElement('script');
-    x.src = 'https://raw.githubusercontent.com/Fakqr/ModMenuAPI/refs/heads/main/ModMenuAPI.js';
+    x.src = 'https://cdn.jsdelivr.net/gh/Fakqr/ModMenuAPI/ModMenuAPI.js';
 
     x.onload = function() {
         var ModMenu = createModMenu('Example', 'This is a Mod Menu!', 'You');
