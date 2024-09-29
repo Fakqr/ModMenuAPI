@@ -32,7 +32,7 @@ function createModMenu(NAME, DESCRIPTION, AUTHOR) {
 
     var DestroyMenuButton = document.createElement('button');
     DestroyMenuButton.innerText = 'X';
-    destroyModMenu.classList.add('DestroyMenuButton');
+    DestroyMenuButton.classList.add('DestroyMenuButton');
 
     // Style
     var CSS = `
