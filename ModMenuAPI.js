@@ -39,6 +39,7 @@ function createModMenu(NAME, DESCRIPTION, AUTHOR) {
     @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
     
     .ModMenuMain {
+        display: block;
         position: fixed;
         background: linear-gradient(90deg, #252525, #252525, #252525);
         border: none;
@@ -81,6 +82,7 @@ function createModMenu(NAME, DESCRIPTION, AUTHOR) {
     }
 
     .ModMenuMain .tab {
+
     }
     `;
 
@@ -122,6 +124,8 @@ function createTab(MODMENU, NAME) {
             NAME: Tab
         });
 
+        MODMENU.appendChild(Tab);
+
         return Tab;
     } else {
         console.warn('Couldn\'t find MODMENU!')
@@ -145,6 +149,8 @@ function createButton(TAB, NAME, FUNCTION) {
                 console.log('Button Clicked!');
             };
         };
+
+        TAB.appendChild(Button);
 
         return Button;
     } else {

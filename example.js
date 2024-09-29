@@ -10,7 +10,7 @@
         // Create your first Tab
         var Tab01 = createTab(ModMenu, 'Tab 1');
         // Create your first Button
-        var Button01 = createButton(Tab01 /* Put Tab Variable Here */, 'Button', function () {
+        var Button01 = createButton(Tab01, 'Button', function () {
             console.log('The button was clicked!');
         });
 
