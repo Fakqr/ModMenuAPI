@@ -4,7 +4,7 @@
     x.src = 'https://cdn.jsdelivr.net/gh/Fakqr/ModMenuAPI@latest/ModMenuAPI.js';
 
     // Waits until ModMenu API if fully loaded before continuing
-    x.onload = function() {
+    x.onload = function () {
         // Create ModMenu
         var ModMenu = createModMenu('Example', 'This is a Mod Menu!', 'You');
         // Create your first Tab
@@ -26,7 +26,7 @@
     };
 
     // Error Handling
-    x.onerror = function(error) {
+    x.onerror = function (error) {
         console.error('Error while loading script:', error);
     };
 

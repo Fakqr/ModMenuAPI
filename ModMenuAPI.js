@@ -51,7 +51,7 @@ function createModMenu(NAME, DESCRIPTION, AUTHOR) {
     }
 
     .ModMenuMain .DestroyMenuButton {
-        position: fixed;
+        position: absolute;
         top: 0;
         right: 0;
         margin: 5px;
