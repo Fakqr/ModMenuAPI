@@ -58,7 +58,11 @@ function createModMenu(NAME, DESCRIPTION, AUTHOR) {
         color: red;
     }
 
-    .ModMenuMain h1, h2, h3, h4, p {
+    .ModMenuMain h1, 
+    .ModMenuMain h2, 
+    .ModMenuMain h3, 
+    .ModMenuMain h4, 
+    .ModMenuMain p {
         font-family: "Roboto", sans-serif;
         color: white;
         margin: 5px;
