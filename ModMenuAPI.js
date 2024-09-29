@@ -48,6 +48,7 @@ function createModMenu(NAME, DESCRIPTION, AUTHOR) {
         left: 50%;
         margin-top: -100px;
         margin-left: -250px;
+        border-radius: 5px;
     }
 
     .ModMenuMain .DestroyMenuButton {
@@ -55,7 +56,8 @@ function createModMenu(NAME, DESCRIPTION, AUTHOR) {
         top: 0;
         right: 0;
         margin: 5px;
-        color: red;
+        color: white;
+        border: none;
     }
 
     .ModMenuMain h1, 
