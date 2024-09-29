@@ -56,8 +56,17 @@ function createModMenu(NAME, DESCRIPTION, AUTHOR) {
         top: 0;
         right: 0;
         margin: 5px;
+        background: #2f2e2e;
         color: white;
         border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 500ms;
+        user-select: none;
+    }
+
+    .ModMenuMain .DestroyMenuButton:hover {
+        filter: brightness(150%);
     }
 
     .ModMenuMain h1, 
@@ -68,6 +77,7 @@ function createModMenu(NAME, DESCRIPTION, AUTHOR) {
         font-family: "Roboto", sans-serif;
         color: white;
         margin: 5px;
+        user-select: none;
     }
 
     .ModMenuMain .tab {
@@ -109,7 +119,7 @@ function createTab(MODMENU, NAME) {
         };
 
         ModMenuTabs.push({
-            NAME : Tab
+            NAME: Tab
         });
 
         return Tab;
@@ -120,7 +130,7 @@ function createTab(MODMENU, NAME) {
 
 function createButton(TAB, NAME, FUNCTION) {
     if (TAB) {
-        var Button = document.createElement(Button);
+        var Button = document.createElement('button');
 
         if (NAME) {
             Button.innerText = NAME
@@ -128,10 +138,10 @@ function createButton(TAB, NAME, FUNCTION) {
             Button.innerText = 'Button'
         };
 
-        if (FUNCTION && typeof(FUNCTION) == 'function') {
+        if (FUNCTION && typeof (FUNCTION) == 'function') {
             Button.onclick = FUNCTION;
         } else {
-            Button.onclick = function() {
+            Button.onclick = function () {
                 console.log('Button Clicked!');
             };
         };
